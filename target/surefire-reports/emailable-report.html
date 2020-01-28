@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">84.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">testLayer.ContactsTest<td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1576357807855</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">testLayer.CalenderTest<td><a href="#m2"><b>dateTest</b>  </a></td><td class="numi">1</td><td>1576357777618</td><td class="numi">6531</td></tr><tr class="failedodd"><td><a href="#m3"><b>titleTest</b> (kadu) </a></td><td class="numi">1</td><td>1576357784152</td><td class="numi">30</td></tr>
+<tr class="failedeven"><td rowspan="1">testLayer.ContactsTest<td><a href="#m4"><b>getCheckboxTick</b>  </a></td><td class="numi">1</td><td>1576357784182</td><td class="numi">40</td></tr>
+<tr class="failedodd"><td rowspan="1">testLayer.LoginTest<td><a href="#m5"><b>iconTest</b> (kadu) </a></td><td class="numi">1</td><td>1576357795613</td><td class="numi">16</td></tr>
+<tr class="failedeven"><td rowspan="1">testLayer.CalenderTest<td><a href="#m6"><b>testMethod</b>  </a></td><td class="numi">1</td><td>1576357784152</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">testLayer.HomeTest<td><a href="#m7"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1576357807916</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">testLayer.ContactsTest<td><a href="#m8"><b>titleTest</b> (kadu) </a></td><td class="numi">1</td><td>1576357784222</td><td class="numi">32</td></tr>
+<tr class="passedeven"><td rowspan="4">testLayer.HomeTest<td><a href="#m9"><b>CRMTitleTest</b> (kadu) </a></td><td class="numi">1</td><td>1576357784254</td><td class="numi">5</td></tr><tr class="passedeven"><td><a href="#m10"><b>Contactspagetest</b>  </a></td><td class="numi">1</td><td>1576357784259</td><td class="numi">105</td></tr><tr class="passedeven"><td><a href="#m11"><b>Postspagetest</b>  </a></td><td class="numi">1</td><td>1576357784364</td><td class="numi">148</td></tr><tr class="passedeven"><td><a href="#m12"><b>usernameTest</b>  </a></td><td class="numi">1</td><td>1576357784512</td><td class="numi">32</td></tr>
+<tr class="passedodd"><td rowspan="1">testLayer.LoginTest<td><a href="#m13"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1576357807363</td><td class="numi">440</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>testLayer.ContactsTest:tearDown</h2>
+<div style="padding-left:3em">
+<p>invalid session id
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-14DTQF0&apos;, ip: &apos;169.254.86.94&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\SANILU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54531}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.79, webStorageEnabled: true}
+Session ID: ad747418e04ce0fa62c21fb23ed17e33</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+<br/>at testLayer.ContactsTest.tearDown(ContactsTest.java:52)
+<br/>33 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>testLayer.ContactsTest:getCheckboxTick</h2>
+<div style="padding-left:3em">
+<p>stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.79)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-14DTQF0&apos;, ip: &apos;169.254.86.94&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\SANILU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54456}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.79, webStorageEnabled: true}
+Session ID: a0d5c348e42a43ead96f790de9b33493</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
+<br/>at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
+<br/>at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+<br/>at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:34)
+<br/>at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:643)
+<br/>at pageLayer.ContactsPage.checkboxTick(ContactsPage.java:50)
+<br/>at testLayer.ContactsTest.getCheckboxTick(ContactsTest.java:40)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>testLayer.CalenderTest:testMethod</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;URL&apos; is required by @Test on method testMethod but has not been marked @Optional or defined
+</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1389)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1081)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1186)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+<br/>at org.testng.TestNG.run(TestNG.java:1030)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>testLayer.CalenderTest:titleTest</h2>
+<div style="padding-left:3em">
+<p>expected [Calendar] but found [Create new Event]</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at testLayer.CalenderTest.titleTest(CalenderTest.java:55)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>testLayer.CalenderTest:dateTest</h2>
+<div style="padding-left:3em">
+<p>stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.79)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-14DTQF0&apos;, ip: &apos;169.254.86.94&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\SANILU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54384}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.79, webStorageEnabled: true}
+Session ID: d8b3733875c46eff03def7e2f1fe22d2</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+<br/>at pageLayer.CalenderPage.dateCalender(CalenderPage.java:40)
+<br/>at testLayer.CalenderTest.dateTest(CalenderTest.java:61)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>testLayer.LoginTest:iconTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;onesignal-bell-container&apos;]&quot;}
+  (Session info: chrome=79.0.3945.79)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-14DTQF0&apos;, ip: &apos;169.254.86.94&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\Users\SANILU~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54495}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.79, webStorageEnabled: true}
+Session ID: 6e9d43dfa4d6fb3507919af761651aa0
+*** Element info: {Using=xpath, value=//div[@id=&apos;onesignal-bell-container&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+<br/>at pageLayer.LoginPage.iconDisplayed(LoginPage.java:42)
+<br/>at testLayer.LoginTest.iconTest(LoginTest.java:40)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>testLayer.HomeTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>testLayer.ContactsTest:titleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>testLayer.HomeTest:usernameTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>testLayer.HomeTest:CRMTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>testLayer.HomeTest:Contactspagetest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>testLayer.HomeTest:Postspagetest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>testLayer.LoginTest:loginTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

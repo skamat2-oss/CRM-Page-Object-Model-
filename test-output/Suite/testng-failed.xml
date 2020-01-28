@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="testLayer.LoginTest">
+        <methods>
+          <include name="iconTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- testLayer.LoginTest -->
+      <class name="testLayer.HomeTest">
+        <methods>
+          <include name="CRMTitleTest"/>
+          <include name="Postspagetest"/>
+          <include name="usernameTest"/>
+          <include name="Contactspagetest"/>
+        </methods>
+      </class> <!-- testLayer.HomeTest -->
+      <class name="testLayer.CalenderTest">
+        <methods>
+          <include name="titleTest"/>
+          <include name="testMethod"/>
+          <include name="dateTest"/>
+          <include name="beginMethods"/>
+        </methods>
+      </class> <!-- testLayer.CalenderTest -->
+      <class name="testLayer.ContactsTest">
+        <methods>
+          <include name="getCheckboxTick"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- testLayer.ContactsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

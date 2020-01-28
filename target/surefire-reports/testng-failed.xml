@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="true">
+    <classes>
+      <class name="testLayer.CalenderTest">
+        <methods>
+          <include name="titleTest"/>
+          <include name="testMethod"/>
+          <include name="dateTest"/>
+          <include name="beginMethods"/>
+        </methods>
+      </class> <!-- testLayer.CalenderTest -->
+      <class name="testLayer.ContactsTest">
+        <methods>
+          <include name="getCheckboxTick"/>
+          <include name="tearDown"/>
+          <include name="getThere"/>
+        </methods>
+      </class> <!-- testLayer.ContactsTest -->
+      <class name="testLayer.LoginTest">
+        <methods>
+          <include name="iconTest"/>
+          <include name="begist"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testLayer.LoginTest -->
+      <class name="testLayer.HomeTest">
+        <methods>
+          <include name="getThere"/>
+        </methods>
+      </class> <!-- testLayer.HomeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
